@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mahiru.gui.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "LogoRendererMixin",
+    "ScreenMixin",
+    "SplashRendererMixin",
+    "TitleScreenMixin"
+  ],
+  "injectors": { "defaultRequire": 0 }
+}

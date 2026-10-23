@@ -1,0 +1,58 @@
+### Build output and tooling (sources only: no build tools, no results) ###
+.gradle/
+build/
+!**/src/**/build/
+# the Gradle wrapper is not published; use your own Gradle 8.x (`gradle build`) or generate it with `gradle wrapper`
+gradlew
+gradlew.bat
+gradle/
+# CI that depends on the wrapper
+.github/
+*.jar
+*.class
+
+### Pictures ###
+# the mod ships without pictures: the player imports their own. `art/arts.json` is an empty catalogue ("[]").
+# Anything else dropped here for a private build stays out of the repository.
+src/main/resources/assets/zaecguimod/textures/art/*
+!src/main/resources/assets/zaecguimod/textures/art/arts.json
+
+### IDE ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/**/out/
+.run/
+.apt_generated
+.classpath
+.eclipse/
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/**/bin/
+.vscode/
+.claude/
+
+### OS and editors ###
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+*.bak
+*.orig
+
+### Minecraft modding / runtime leftovers ###
+run/
+!**/src/**/run/
+**/src/generated/**/.cache/
+repo/
+!**/src/**/repo/
+crash-reports/
+hs_err_pid*
+*.log
